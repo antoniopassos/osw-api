@@ -50,7 +50,7 @@ public class ClienteController {
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public Cliente save(@Valid @RequestBody Cliente cliente) {		
+	public Cliente create(@Valid @RequestBody Cliente cliente) {		
 		return cadastroCliente.salvar(cliente);
 	}
 
